@@ -1,8 +1,10 @@
 import './App.css'
+import Signin from './pages/Login'
 
 function App() {
   return (
-    <h1>Mediahub</h1>
+    
+    <Signin/>
   )
 }
 

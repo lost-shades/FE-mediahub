@@ -1,0 +1,19 @@
+button.buttonStyle {
+  /* border: 5px solid red; */
+  height: 56px;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #C83CD4, #6736A6);
+}
+
+input {
+  background-color: #605468;
+  height: 54px;
+  width: 100%;
+}
+
+.inputgap{
+  border: 5px solid green;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

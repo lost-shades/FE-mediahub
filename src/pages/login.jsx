@@ -1,21 +1,12 @@
 import React, { useState } from 'react'
+import { Button } from '../components/Button'
+import { Inputs } from '../components/Inputs'
 import './Login.css'
-import { Button } from './button/Button'
+
+
 
 const Signin = () => {
-  const [inputs, setInputs] = useState('')
-
-  const handleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setInputs(values => ({...values, [name]: value}))
-  }
-
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // my submit logic
-  }
+  
 
   return (
     <main className='login'>
@@ -23,14 +14,28 @@ const Signin = () => {
             <img src="/Media Hub Logo 2 1.png" alt="logo" />
         </header>
         <section className="formWrapper">            
-            <form onSubmit={handleSubmit}>
+            <form>
                 <div className='topheading'>
                     <h2>Welcome back!</h2>
                     <p>Kindly Fill in your Correct Log in Details</p>
                 </div>
                 <div className='formContainer'>
-                    <div className="inputField">
-                        <input
+                    <div className='inputgap'>
+                        <Inputs
+                            type={"email"}
+                            placeholder={"Email"}
+                            names={"emailAddress"} 
+                        />
+                        
+                        <div className='passgap'>
+                        <Inputs
+                            type={"password"}
+                            placeholder={"Password"}
+                            names={"passId"} 
+                        />
+                        <p className='forgotPassword'>Forgot password?</p>
+                        </div>
+                        {/* <input
                             type="email"
                             placeholder='Email'
                             name='emailAddress'
@@ -48,12 +53,11 @@ const Signin = () => {
                                 required
                             />
                             <img src='/eye-slash.png'/>
-                        </div>
-                        <p className='forgotPassword'>Forgot password?</p>
+                        </div> */}
+                        
                     </div>
-                    <button type="submit">Sign In</button>
-                    {/* <Button value={"register"}/>
-                    <Button value={"verify"} customStyle={'verifyButton'}/> */}
+                    
+                    <Button value={"Sign In"}/>
                 </div>
             </form>
         </section>

@@ -50,7 +50,7 @@ main header.imageDiv img {
     color: #B5AEB5;
 }
 
-input {
+/* input {
     background-color: #605468;
     height: 54px;
     width: 100%;
@@ -59,17 +59,18 @@ input {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-.formContainer button {
+} */
+/* .formContainer button {
     height: 56px;
     cursor: pointer;
     background-image: linear-gradient(to right, #C83CD4, #6736A6);
-}
+} */
 .formContainer {
+    border: 5px solid yellow;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
 }
 .passwordEye img{
     position: fixed;
@@ -84,7 +85,3 @@ input {
     text-align: right;
 }
 
-.verifyButton {
-    color: white;
-    background-color: red;
-}
