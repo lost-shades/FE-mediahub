@@ -3,6 +3,7 @@ import './App.css'
 import Signin from './pages/Login'
 import { Signup } from "./pages/Signup"
 import { EmailVerification } from "./pages/EmailVerification"
+import { Homepage } from "./pages/Homepage"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="SignUp" element={<Signup/>}/>
           <Route path="Login" element={<Signin/>}/>
           <Route path="EmailVerification" element={<EmailVerification/>}/>
+          <Route path="Homepage" element={<Homepage/>}/>
           {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>
