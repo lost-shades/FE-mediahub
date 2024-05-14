@@ -83,14 +83,14 @@ main header.imageDiv img {
     width: 100%;
     gap: 20px;
 }
-.formContainer p {
+.p3 {
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.formContainer a {
+.p3child {
     color: rgb(247, 7, 247);
 }
 .passwordEye img{
@@ -121,6 +121,7 @@ main header.imageDiv img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 70%;
   }
 
   .verify-container2 {

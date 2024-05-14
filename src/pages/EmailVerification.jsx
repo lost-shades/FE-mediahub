@@ -21,7 +21,7 @@ export const EmailVerification = () => {
                     <p>We sent verification code to mariaj@gmail.com. To verify your email address, please check your inbox and enter the code below</p>
                 </div>
 
-                <div className='inputgap'>
+                <div className='verificationInput'>
                     <Inputs
                         type={"text"}
                         placeholder={"Enter 4 digit code"}

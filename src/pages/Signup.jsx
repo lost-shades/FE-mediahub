@@ -84,7 +84,7 @@ export const Signup = () => {
                             <SocialButton key={src} src={src} alt={alt} />
                         ))}
                         </div>
-                        <p>Already have an account?<a href="/"> Sign in</a></p>
+                        <p className='p3'>Already have an account?<a className='p3child' href="/"> Sign in</a></p>
                     </div>
                 </form>
             </section>

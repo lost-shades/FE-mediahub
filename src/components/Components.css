@@ -19,8 +19,16 @@ input {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.verificationInput{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
   width: 80%;
 }
+
 .socialButtons {
   display: flex;
   flex-direction: row;
