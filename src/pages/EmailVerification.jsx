@@ -9,27 +9,27 @@ export const EmailVerification = () => {
         <header className='imageDiv'>
             <img src="/Media Hub Logo 2 1.png" alt="logo" />
         </header>
-        <div className='topheading'>
+        <div className='emailHeading'>
             <p>Let's get you started</p>
         </div>
         <section className='verify-container'>
             <img className='vector' src="/Vector.png" alt="" />
             <section className='verify-container2'>
-            <div className='div1'>
-                <img src="/sms-tracking.png" alt="" />
-                <h3>Verify its you.</h3>
-                <p>We sent verification code to mariaj@gmail.com. To verify your email address, please check your inbox and enter the code below</p>
-            </div>
+                <div className='div1'>
+                    <img src="/sms-tracking.png" alt="" />
+                    <h3>Verify its you.</h3>
+                    <p>We sent verification code to mariaj@gmail.com. To verify your email address, please check your inbox and enter the code below</p>
+                </div>
 
-            <div className='inputgap'>
-                <Inputs
-                    type={"text"}
-                    placeholder={"Enter 4 digit code"}
-                    names={"VerifyCode"} 
-                />
-                <Button className='buttonStyle' value={"Verify code"} />
-            </div>
-            <p className='p3'>Didnt recieve an email? <a className='p3child'>Try Again</a></p>
+                <div className='inputgap'>
+                    <Inputs
+                        type={"text"}
+                        placeholder={"Enter 4 digit code"}
+                        names={"VerifyCode"} 
+                    />
+                    <Button className='buttonStyle' value={"Verify code"} />
+                </div>
+                <p className='p3'>Didnt recieve an email? <a className='p3child'>Try Again</a></p>
             </section>
         </section>
     </main>

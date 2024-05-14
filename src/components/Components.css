@@ -5,6 +5,7 @@ button.buttonStyle {
   color: #ffff;
   background-image: linear-gradient(to right, #C83CD4, #6736A6);
   margin-top: 10px;
+  width: 100%;
 }
 
 input {
@@ -18,6 +19,7 @@ input {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .socialButtons {
   display: flex;

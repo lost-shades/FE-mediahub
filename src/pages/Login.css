@@ -52,6 +52,15 @@ main header.imageDiv img {
     color: #B5AEB5;
 }
 
+.emailHeading{
+    /* border: 5px solid red; */
+    margin-top: 30px;
+    color: #B5AEB5;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
 /* input {
     background-color: #605468;
     height: 54px;
@@ -104,11 +113,10 @@ main header.imageDiv img {
   }
   
   .verify-container{
-    border: 5px solid red;
+    /* border: 5px solid red; */
     width: 40%;
-    margin-top: 1px;
+    margin: auto;
     background-color: #11001E;
-    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,9 +129,8 @@ main header.imageDiv img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    width: 75%;
-    height: 516px;
+    margin: auto;
+    width: 100%;
     gap: 1rem;
   }
   
@@ -139,12 +146,23 @@ main header.imageDiv img {
   }
 
   .div1{
-    /* border: 5px solid red; */
-    width: 95%;
+    /* border: 5px solid rgb(180, 247, 65); */
     gap: 1rem;
+    width: 80%;
     height: 15rem;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .img1 {
+    /* border: 5px solid red; */
+    margin-left: 1px;
+    display: flex;
+    margin-top: 0;
+    margin-left: 4rem;
+    align-self: flex-start;
+    width: 5rem;
   }
