@@ -6,10 +6,8 @@ import './Login.css'
 
 
 const Signin = () => {
-  
-
   return (
-    <main className='login'>
+    <main className='mainStyle'>
         <header className='imageDiv'>
             <img src="/Media Hub Logo 2 1.png" alt="logo" />
         </header>
