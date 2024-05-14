@@ -31,7 +31,7 @@ const Signin = () => {
                             placeholder={"Password"}
                             names={"passId"} 
                         />
-                        <p className='forgotPassword'>Forgot password?</p>
+                        <p id='forgotPassword'>Forgot password?</p>
                         </div>
                         {/* <input
                             type="email"
