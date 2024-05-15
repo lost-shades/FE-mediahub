@@ -7,18 +7,36 @@ main.mainStyle {
     align-items: center;
     background-color: #11001E;
 }
-main header.imageDiv {
+main header .imageDiv {
     width: 100%;
     height: 98px;
     display: flex;
     align-items: center;
     padding-left: 76px;
-    /* border: 3px solid lime; */
+    color: #ffff;
+    border: 3px solid lime;
 }
+
 main header.imageDiv img {
     width: 98px;
     height: 98px;
     align-self: flex-start;
+}
+ header.navStyle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 5px solid red;
+ } 
+ .listStyle{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #ffff;
+    border: 3px solid rgb(43, 255, 0);
+}
+.navIcons{
+    color: #ffff;
 }
 .formWrapper {
     display: flex;

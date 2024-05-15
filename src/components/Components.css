@@ -35,3 +35,12 @@ input {
   gap: 100px;
   cursor: pointer;
 }
+.inputWrapper{
+  position: relative;
+}
+.inputIcon {
+  position: absolute;
+  color: #ffff;
+  top: 17px;
+  right: 10px;
+}

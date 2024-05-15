@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button } from '../components/Button'
 import { Inputs } from '../components/Inputs'
+import { FaRegEyeSlash } from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
 
 
 export const Signup = () => {
@@ -39,45 +41,27 @@ export const Signup = () => {
                         </p>
                     </div>
                     <div className='formContainer'>
-                        <div className='inputgap'>
-                            <div>
+                        <div className='inputgap'>                   
                             <Inputs
+                                inputStyles="signupInput"
                                 type={"text"}
                                 placeholder={"Full Name"}
                                 names={"Usersname"} 
                             />
-                            <img
-                                src=''
-                                alt=""
-                                className="input-icon"
-                            />
-                            </div>
-                            <div>
                             <Inputs
                                 type={"email"}
                                 placeholder={"Email"}
-                                names={"emailAddress"} 
+                                names={"emailAddress"}
+                                inputIcon={<IoIosMail/>} 
                             />
-                            <img
-                                src=''
-                                alt=""
-                                className="input-icon"
-                            />
-                            </div>
-                            <div>
-                            <input
+                            <Inputs
                                 type={"password"}
                                 placeholder={"Password"}
                                 names={"passId"}
+                                inputIcon={<FaRegEyeSlash/>}
                             />
-                            <img
-                                src=''
-                                alt=""
-                                className="input-icon"
-                            />
-                            </div>
                         </div>
-                        <Button className='buttonStyle' value={"Sign Up"} />
+                        <Button value={"Sign Up"} />
                         <div className='formFooter'>
                             <p className="p3">Or</p>
                             <div className="socialButtons">

@@ -1,16 +1,22 @@
 import React from 'react'
+import { CgProfile } from 'react-icons/cg'
+import { IoMdSearch } from 'react-icons/io'
 
 export const Homepage = () => {
   return (
-    <main>
-      <header>
+    <main className='mainStyle'>
+      <header className='navStyle'>
         <nav>
-        <img src="/Media Hub Logo 2 1.png" alt="logo" />
-        <ul>
-          <li>Home</li>
-          <li>Dashboard</li>
-          <li>Services</li>
-        </ul>
+          <img src="/Media Hub Logo 2 1.png" alt="logo" />
+          <ul className='listStyle'>
+            <li>Home</li>
+            <li>Dashboard</li>
+            <li>Services</li>
+          </ul>
+          <div className='navIcons'>
+            <IoMdSearch/>
+            <CgProfile/>
+          </div>
         </nav>
       </header>
       <div>

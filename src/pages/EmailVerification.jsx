@@ -27,7 +27,7 @@ export const EmailVerification = () => {
                         placeholder={"Enter 4 digit code"}
                         names={"VerifyCode"} 
                     />
-                    <Button className='buttonStyle' value={"Verify code"} />
+                    <Button customStyle='verificationButton' value={"Verify code"} />
                 </div>
                 <p className='p3'>Didnt recieve an email? <a className='p3child'>Try Again</a></p>
             </section>

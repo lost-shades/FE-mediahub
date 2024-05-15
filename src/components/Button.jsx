@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Components.css"
 
-export const Button = ({value}) => {
+export const Button = ({value, customStyle}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // my submit logic
@@ -9,8 +9,8 @@ export const Button = ({value}) => {
 
   return (
     <button 
+      className={`buttonStyle ${customStyle}`}
       onClick={handleSubmit} 
-      className='buttonStyle' 
       type='submit'>
       {value}
     </button>
