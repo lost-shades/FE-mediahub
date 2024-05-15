@@ -89,9 +89,11 @@ main header.imageDiv img {
 }
 
 .mediaSection{
+    /* border: 5px solid yellow; */
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    /* gap: 10px; */
 }
 
 .mediah1pDiv{
@@ -100,6 +102,7 @@ main header.imageDiv img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .mediah1pDiv p{
@@ -253,7 +256,7 @@ button.movieButton{
     align-items: center;
     margin: auto;
     width: 100%;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .ForgotPassword-container2{
@@ -262,8 +265,9 @@ button.movieButton{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    width: 85%;
+    width: 95%;
     gap: 10px;
+    height: 70%;
   }
 
   .ForgotPassword-container{
@@ -284,20 +288,20 @@ button.movieButton{
     display: flex;
     align-self: flex-end;
     margin-right: 10px;
-    margin-top: 5px;
     cursor: pointer;
   }
 
   .div1{
     /* border: 5px solid rgb(180, 247, 65); */
-    gap: 1rem;
-    width: 80%;
-    height: 15rem;
+    gap: 10px;
+    width: 95%;
+    /* height: 20px; */
     display: flex;
     color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .img1 {

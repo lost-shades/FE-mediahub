@@ -18,7 +18,7 @@ export const EmailVerification = () => {
                 <div className='div1'>
                     <img src="/sms-tracking.png" alt="" />
                     <h3>Verify its you.</h3>
-                    <p>We sent verification code to mariaj@gmail.com. To verify your email address, please check your inbox and enter the code below</p>
+                    <p>To verify your email address, please check your inbox and enter the code below</p>
                 </div>
 
                 <div className='verificationInput'>

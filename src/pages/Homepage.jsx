@@ -4,7 +4,7 @@ import { IoMdSearch } from 'react-icons/io'
 
 export const Homepage = () => {
   return (
-    <main className=''>
+    <main>
       <header className='navStyle'>
         <nav className='navStyle'>
           <img src="/Media Hub Logo 2 1.png" alt="logo" />
