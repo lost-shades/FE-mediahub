@@ -5,6 +5,7 @@ import { Signup } from "./pages/Signup"
 import { EmailVerification } from "./pages/EmailVerification"
 import { Homepage } from "./pages/Homepage"
 import { Onboarding } from "./pages/Onboarding"
+import { ForgotPassword } from "./pages/ForgotPassword"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="EmailVerification" element={<EmailVerification/>}/>
           <Route path="Homepage" element={<Homepage/>}/>
           <Route path="Onboarding" element={<Onboarding/>}/>
+          <Route path="ForgotPassword" element={<ForgotPassword/>}/>
           {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>
