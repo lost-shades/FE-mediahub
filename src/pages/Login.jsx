@@ -8,7 +8,7 @@ import './Login.css'
 const Signin = () => {
   return (
     <main className='mainStyle'>
-        <header className='imageDiv'>
+        <header className='mediaLogoDiv'>
             <img src="/Media Hub Logo 2 1.png" alt="logo" />
         </header>
         <section className="formWrapper">            

@@ -70,11 +70,54 @@ main header.imageDiv img {
 
 .frameButtonDiv button{
     /* border: 5px solid pink; */
+    cursor: pointer;
     width: 102px;
     height: 40px;
     border-radius: 10px;
     color: white;
     background-color: #11001E;
+}
+
+.mediaButtonDiv{
+    /* border: 5px solid red; */
+    height: 50px;
+    width: 55rem;
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+.mediaSection{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mediah1pDiv{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediah1pDiv p{
+    color: #B5AEB5;
+}
+
+.mediaButtonDiv button{
+    border: 1px solid #605468;
+    cursor: pointer;
+    width: 105px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+button.mediaDoneButton{
+    background: linear-gradient(#6736A6, #C83CD4);
 }
 
 .frameDiv a{

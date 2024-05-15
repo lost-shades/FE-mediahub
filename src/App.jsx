@@ -4,6 +4,7 @@ import Signin from './pages/Login'
 import { Signup } from "./pages/Signup"
 import { EmailVerification } from "./pages/EmailVerification"
 import { Homepage } from "./pages/Homepage"
+import { Onboarding } from "./pages/Onboarding"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="Login" element={<Signin/>}/>
           <Route path="EmailVerification" element={<EmailVerification/>}/>
           <Route path="Homepage" element={<Homepage/>}/>
+          <Route path="Onboarding" element={<Onboarding/>}/>
           {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>

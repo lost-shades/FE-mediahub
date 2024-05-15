@@ -44,3 +44,8 @@ input {
   top: 17px;
   right: 10px;
 }
+
+.mediaLogoDiv{
+  /* border: 5px solid red; */
+  width: 95%;
+}
