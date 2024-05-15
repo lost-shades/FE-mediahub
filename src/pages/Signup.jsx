@@ -78,13 +78,15 @@ export const Signup = () => {
                             </div>
                         </div>
                         <Button className='buttonStyle' value={"Sign Up"} />
-                        <p className="separator">Or</p>
-                        <div className="socialButtons">
-                        {socialButtons.map(({ src, alt }) => (
-                            <SocialButton key={src} src={src} alt={alt} />
-                        ))}
+                        <div className='formFooter'>
+                            <p className="p3">Or</p>
+                            <div className="socialButtons">
+                            {socialButtons.map(({ src, alt }) => (
+                                <SocialButton key={src} src={src} alt={alt} />
+                            ))}
+                            </div>
+                            <p className='p3'>Already have an account?<a className='p3child' href="/"> Sign in</a></p>
                         </div>
-                        <p className='p3'>Already have an account?<a className='p3child' href="/"> Sign in</a></p>
                     </div>
                 </form>
             </section>
