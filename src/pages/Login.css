@@ -26,17 +26,84 @@ main header.imageDiv img {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: 5px solid red;
+    /* border: 5px solid red; */
  } 
- .listStyle{
+
+ .navStyle{
+    /* border: 5px solid blue; */
+    background-color: #11001E;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .listStyle{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     color: #ffff;
-    border: 3px solid rgb(43, 255, 0);
+    /* border: 3px solid rgb(43, 255, 0); */
 }
 .navIcons{
     color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    width: 6%;
+    font-size: 25px;
+}
+
+.frameDivs{
+    background-color: #11001E;
+}
+
+.frameButtonDiv{
+    /* border: 5px solid red; */
+    height: 70px;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameButtonDiv button{
+    /* border: 5px solid pink; */
+    width: 102px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: #11001E;
+}
+
+.frameDiv a{
+    color: #FF604B;
+}
+
+button.movieButton{
+    background: linear-gradient(#A85AFF, #E14EFF )
+}
+
+.frameDiv{
+    /* border: 5px solid yellow; */
+    width: 100%;
+    color: white;
+    font-size: 30px;
+}
+
+.frameDiv div{
+    /* border: 5px solid pink; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.frameDiv p{
+    /* border: 5px solid green; */
+    width: 95%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .formWrapper {
     display: flex;
