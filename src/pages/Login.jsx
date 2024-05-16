@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Button } from '../components/Button'
 import { Inputs } from '../components/Inputs'
-import './Login.css'
+import './Pages.css'
 
 
 

@@ -4,7 +4,7 @@ import "./Components.css"
 export const Button = ({value, customStyle}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // my submit logic
+    // Add submit logic
   }
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Inputs} from '../components/Inputs'
 import {Button} from '../components/Button'
-import './Login.css'
+import './Pages.css'
 
 export const EmailVerification = () => {
   return (
