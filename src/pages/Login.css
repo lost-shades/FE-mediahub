@@ -32,11 +32,12 @@ main header.imageDiv img {
  .navStyle{
     /* border: 5px solid blue; */
     background-color: #11001E;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
  }
  .listStyle{
     width: 20%;
@@ -55,10 +56,10 @@ main header.imageDiv img {
     font-size: 25px;
 }
 
-.frameDivs{
-    background-color: #11001E;
+.homePageMain {
+    background-color: #41334B;
+    width: 100%;
 }
-
 .frameButtonDiv{
     /* border: 5px solid red; */
     height: 70px;
@@ -66,6 +67,8 @@ main header.imageDiv img {
     gap: 2px;
     justify-content: center;
     align-items: center;
+    background-color: #41334B;
+    width: 100%;
 }
 
 .frameButtonDiv button{
@@ -122,6 +125,15 @@ main header.imageDiv img {
 button.mediaDoneButton{
     background: linear-gradient(#6736A6, #C83CD4);
 }
+.frameDivs{
+    background-color: #11001E;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
 .frameDiv a{
     color: #FF604B;
@@ -137,7 +149,9 @@ button.movieButton{
     color: white;
     font-size: 30px;
 }
-
+.frameDiv img {
+    width: 290px;
+}
 .frameDiv div{
     /* border: 5px solid pink; */
     display: flex;
@@ -150,6 +164,7 @@ button.movieButton{
     margin-left: 30px;
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
 }
 .formWrapper {
     display: flex;
