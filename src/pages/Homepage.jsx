@@ -1,8 +1,11 @@
 import React from 'react'
 import { CgProfile } from 'react-icons/cg'
 import { IoMdSearch } from 'react-icons/io'
+import { MovieCard } from '../components/MovieCard'
+import { MovieData } from '../components/MovieData'
 
 export const Homepage = () => {
+  // console.log(MovieData)
   return (
     <main className='homePageMain'>
       <header className='navStyle'>
@@ -30,10 +33,18 @@ export const Homepage = () => {
             <p>Recomendations <a className='' href="/">See all</a></p>
           </div>
           <div>
-            <img src="/public/Frame 1.png" alt="" />
-            <img src="/public/Frame 2.png" alt="" />
-            <img src="/public/Frame 3.png" alt="" />
-            <img src="/public/Frame 4.png" alt="" />
+            {
+              MovieData.map((movie, index)=>(
+                <MovieCard 
+                  key={index}
+                  moviePoster={movie.moviePoster}
+                  movieName={movie.movieName}
+                  movieGenre={movie.movieGenre}
+                  platformLogo={movie.platformLogo}
+                  platformName={movie.platformName}     
+                />
+              ))
+            }
           </div>
         </section>
         
