@@ -6,7 +6,7 @@ export const Onboarding = () => {
       <div className='mediaLogoDiv'>
       <img src="/Media Hub Logo 2 1.png" alt="logo" />
       </div>
-      <section>
+      <section className='onboarding'>
         <div className='mediah1pDiv'>
           <h1>Select your Media accounts</h1>
           <p>Kindly select the accounts you want to connect to Media hub</p>
