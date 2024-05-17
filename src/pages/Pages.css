@@ -40,7 +40,7 @@ main header.imageDiv img {
     margin: auto;
  }
  .listStyle{
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +60,10 @@ main header.imageDiv img {
     background-color: #41334B;
     width: 100%;
 }
-.frameButtonDiv{
+.homePageMain div{
+    background-color: #11001E;
+}
+.homePageMain .frameButtonDiv{
     /* border: 5px solid red; */
     height: 70px;
     display: flex;
@@ -327,4 +330,27 @@ button.movieButton{
     margin-left: 4rem;
     align-self: flex-start;
     width: 5rem;
+  }
+
+  .navLink {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--Media-Hub-colour-Text-text--50, #fffeff);
+    text-decoration: none;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    color: var(--Media-Hub-colour-primary-primary-300, #b66dff);
+  }
+  
+  .active {
+    color: var(--Media-Hub-colour-primary-primary-300, #b66dff);
+    font-weight: 700;
+  }
+  .sectionFlex{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: #11001E;
   }

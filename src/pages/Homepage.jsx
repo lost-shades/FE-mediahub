@@ -3,18 +3,53 @@ import { CgProfile } from 'react-icons/cg'
 import { IoMdSearch } from 'react-icons/io'
 import { MovieCard } from '../components/MovieCard'
 import { MovieData } from '../components/MovieData'
+import { NavLink, Link } from 'react-router-dom'
+import './Pages.css'
 
 export const Homepage = () => {
-  // console.log(MovieData)
   return (
     <main className='homePageMain'>
-      <header className='navStyle'>
+      <Navigation />
+      <Toggle />
+      <div>
+        <SectionTitle secTitle="Recommendations"/>
+        <SectionTitle secTitle="Continue Watching"/>
+        <SectionTitle secTitle="My Watch List"/>
+      </div>
+    </main>
+  )
+}
+
+const Navigation=()=>{
+  return(
+    <header className='navStyle'>
         <nav className='navStyle'>
           <img src="/Media Hub Logo 2 1.png" alt="logo" />
           <ul className='listStyle'>
-            <li>Home</li>
-            <li>Dashboard</li>
-            <li>Services</li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? 'navLink active' : 'navLink'
+                }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive ? 'navLink active' : 'navLink'
+              }
+            >
+              Dashboard
+            </NavLink>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? 'navLink active' : 'navLink'
+              }
+            >
+              Services
+            </NavLink>
           </ul>
           <div className='navIcons'>
             <IoMdSearch/>
@@ -22,83 +57,38 @@ export const Homepage = () => {
           </div>
         </nav>
       </header>
-      <div className='frameButtonDiv'>
-        <button>Music</button>
-        <button className='movieButton'>Movies</button>
-      </div>
+  )
+}
 
-      <section className='frameDivs'>
-        <section className='frameDiv'>
-          <div>
-            <p>Recomendations <a className='' href="/">See all</a></p>
-          </div>
-          <div>
-            {
-              MovieData.map((movie, index)=>(
-                <MovieCard 
-                  key={index}
-                  moviePoster={movie.moviePoster}
-                  movieName={movie.movieName}
-                  movieGenre={movie.movieGenre}
-                  platformLogo={movie.platformLogo}
-                  platformName={movie.platformName}     
-                />
-              ))
-            }
-          </div>
-        </section>
-        
-        <section className='frameDiv'>
-          <div>
-            <p>Continue Watching <a className='' href="/">See all</a></p>
-          </div>
-          <div>
-          {
-              MovieData.map((movie, index)=>(
-                <MovieCard 
-                  key={index}
-                  moviePoster={movie.moviePoster}
-                  movieName={movie.movieName}
-                  movieGenre={movie.movieGenre}
-                  platformLogo={movie.platformLogo}
-                  platformName={movie.platformName}     
-                />
-              ))
-            }
-            {/* <img src="/public/Frame 5.png" alt="" />
-            <img src="/public/Frame 6.png" alt="" />
-            <img src="/public/Frame 7.png" alt="" />
-            <img src="/public/Frame 8.png" alt="" /> */}
-          </div>
-        </section>
+const Toggle=()=>{
+  return(
+    <div className='frameButtonDiv'>
+      <button>Music</button>
+      <button className='movieButton'>Movies</button>
+  </div>
+  )
+}
 
-        <section className='frameDiv'>
-          <div>
-            <p>My Watch List <a className='' href="/">See all</a></p>
-          </div>
-          <div>
-          {
-              MovieData.map((movie, index)=>(
-                <MovieCard 
-                  key={index}
-                  moviePoster={movie.moviePoster}
-                  movieName={movie.movieName}
-                  movieGenre={movie.movieGenre}
-                  platformLogo={movie.platformLogo}
-                  platformName={movie.platformName}     
-                />
-              ))
-            }
-            {/* <img src="/public/Frame 9.png" alt="" />
-            <img src="/public/Frame 10.png" alt="" />
-            <img src="/public/Frame 11.png" alt="" />
-            <img src="/public/Frame 12.png" alt="" /> */}
-          </div>
-        </section>
-      </section>
-
-      
-
-    </main>
+const SectionTitle=({secTitle})=>{
+  return(
+    <section className='frameDiv'>
+    <div>
+      <p>{secTitle} <Link className='' to="/">See all</Link></p>
+    </div>
+    <div className='sectionFlex'>
+      {
+        MovieData.map((movie, index)=>(
+          <MovieCard 
+            key={index}
+            moviePoster={movie.moviePoster}
+            movieName={movie.movieName}
+            movieGenre={movie.movieGenre}
+            platformLogo={movie.platformLogo}
+            platformName={movie.platformName}     
+          />
+        ))
+      }
+    </div>
+  </section>
   )
 }
