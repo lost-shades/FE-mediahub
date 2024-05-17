@@ -53,10 +53,22 @@ export const Homepage = () => {
             <p>Continue Watching <a className='' href="/">See all</a></p>
           </div>
           <div>
-            <img src="/public/Frame 5.png" alt="" />
+          {
+              MovieData.map((movie, index)=>(
+                <MovieCard 
+                  key={index}
+                  moviePoster={movie.moviePoster}
+                  movieName={movie.movieName}
+                  movieGenre={movie.movieGenre}
+                  platformLogo={movie.platformLogo}
+                  platformName={movie.platformName}     
+                />
+              ))
+            }
+            {/* <img src="/public/Frame 5.png" alt="" />
             <img src="/public/Frame 6.png" alt="" />
             <img src="/public/Frame 7.png" alt="" />
-            <img src="/public/Frame 8.png" alt="" />
+            <img src="/public/Frame 8.png" alt="" /> */}
           </div>
         </section>
 
@@ -65,10 +77,22 @@ export const Homepage = () => {
             <p>My Watch List <a className='' href="/">See all</a></p>
           </div>
           <div>
-            <img src="/public/Frame 9.png" alt="" />
+          {
+              MovieData.map((movie, index)=>(
+                <MovieCard 
+                  key={index}
+                  moviePoster={movie.moviePoster}
+                  movieName={movie.movieName}
+                  movieGenre={movie.movieGenre}
+                  platformLogo={movie.platformLogo}
+                  platformName={movie.platformName}     
+                />
+              ))
+            }
+            {/* <img src="/public/Frame 9.png" alt="" />
             <img src="/public/Frame 10.png" alt="" />
             <img src="/public/Frame 11.png" alt="" />
-            <img src="/public/Frame 12.png" alt="" />
+            <img src="/public/Frame 12.png" alt="" /> */}
           </div>
         </section>
       </section>
