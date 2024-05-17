@@ -12,6 +12,13 @@ export const EmailVerification = () => {
         <div className='emailHeading'>
             <p>Let's get you started</p>
         </div>
+        <VerificationModal />
+    </main>
+  )
+}
+
+const VerificationModal=()=>{
+    return(
         <section className='verify-container'>
             <img className='vector' src="/Vector.png" alt="" />
             <section className='verify-container2'>
@@ -32,6 +39,5 @@ export const EmailVerification = () => {
                 <p className='p3'>Didnt recieve an email? <a className='p3child'>Try Again</a></p>
             </section>
         </section>
-    </main>
-  )
+    )
 }
