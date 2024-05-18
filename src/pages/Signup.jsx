@@ -3,6 +3,7 @@ import { Button } from '../components/Button'
 import { Inputs } from '../components/Inputs'
 import { FaRegEyeSlash } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 
 export const Signup = () => {
@@ -69,11 +70,17 @@ export const Signup = () => {
                                 <SocialButton key={src} src={src} alt={alt} />
                             ))}
                             </div>
-                            <p className='p3'>Already have an account?<a className='p3child' href="/"> Sign in</a></p>
+                            <p className='p3'>Already have an account?<Link className='p3child' href="/"> Sign in</Link></p>
                         </div>
                     </div>
                 </form>
             </section>
         </main>
     );
-    }
+}
+
+// const MediaHubLogo=()=>{
+//     <header className='mediaLogoDiv'>
+//         <img src="/Media Hub Logo 2 1.png" alt="logo" />
+//     </header>
+// }
