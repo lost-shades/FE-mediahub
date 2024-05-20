@@ -3,7 +3,7 @@ button.buttonStyle {
   height: 56px;
   cursor: pointer;
   color: #ffff;
-  background-image: linear-gradient(to right, #C83CD4, #6736A6);
+  background: linear-gradient(to right, #C83CD4, #6736A6);
   margin-top: 10px;
   width: 100%;
 }
