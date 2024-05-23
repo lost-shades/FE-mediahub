@@ -59,6 +59,7 @@ main header.imageDiv img {
 .homePageMain {
     background-color: #41334B;
     width: 100%;
+    color: white;
 }
 .homePageMain div{
     background-color: #11001E;
